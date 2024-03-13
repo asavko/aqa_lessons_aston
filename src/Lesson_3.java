@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Lesson_3 {
 
@@ -52,16 +51,16 @@ public class Lesson_3 {
      * 5. Написать метод, который определяет, является ли год високосным, и возвращает boolean (високосный - true,
      * не високосный - false). Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
      */
-    public static void checkLeapYear(int year) {
+    public static boolean checkLeapYear(int year) {
         if (year % 4 == 0) {
-            System.out.println("Этот год високосный");
+            return  true;
         } else {
-            System.out.println("Этот год не високосный");
+            return  false;
         }
     }
 
     /**
-     * 6. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
+     * 6. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [1, 1, 0, 0, 1, 0, 1, 1, 0, 0].
      * С помощью цикла и условия заменить 0 на 1, 1 на 0;
      */
     public static void replacingNumbersInArray() {
